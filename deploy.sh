@@ -2,13 +2,7 @@
 
 eval "$(ssh-agent -s)" # Start ssh-agent cache
 chmod 600 .travis/id_rsa # Allow read access to the private key
-# ssh-add .travis/id_rsa # Add the private key to SSH
-
-spawn ssh-add .travis/id_rsa
-expect "Enter passphrase for .travis/id_rsa:"
-send "\n";
-# expect "Identity added: .travis/id_rsa (/home/user/.ssh/id_rsa)"
-interact
+ssh-add .travis/id_rsa # Add the private key to SSH
 
 git config --global push.default matching
 git remote add deploy ssh://git@77.68.127.191/var/www/sites/docker-react

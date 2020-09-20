@@ -5,7 +5,7 @@
   "author": "Graham Aitken",
   "license": "ISC",
   "homepage": ".",
-  "description": "Simple Node.js and Redis app for Section 5 of the Udemy Docker and Kubernetes course.",
+  "description": "Simple Docker and React app to demonstrate Continuous Integration and Deployment.",
   "main": "index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -38,7 +38,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://mosimane@bitbucket.org/mosimane/docker-react.git"
+    "url": "https://github.com/musimana/docker-react.git"
   },
   "keywords": [
     "React",
