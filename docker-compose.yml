@@ -11,8 +11,8 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - /var/www/sites/frontend/node_modules
-      - .:/var/www/sites/frontend
+      - /var/www/sites/docker-react/node_modules
+      - .:/var/www/sites/docker-react
   tests:
     stdin_open: true
     environment:
@@ -21,7 +21,7 @@ services:
       context: .
       dockerfile: Dockerfile.dev
     volumes:
-      - /var/www/sites/frontend/node_modules
-      - .:/var/www/sites/frontend
+      - /var/www/sites/docker-react/node_modules
+      - .:/var/www/sites/docker-react
     command: ["npm", "run", "test"]
 

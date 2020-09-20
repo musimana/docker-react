@@ -1,7 +1,12 @@
 {
-  "name": "frontend",
-  "version": "0.1.0",
-  "private": true,
+  "name": "docker-react",
+  "version": "0.0.1",
+  "private": false,
+  "author": "Graham Aitken",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/mosimane/docker-react#readme",
+  "description": "Simple Node.js and Redis app for Section 5 of the Udemy Docker and Kubernetes course.",
+  "main": "index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -26,9 +31,18 @@
       "not op_mini all"
     ],
     "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      "last 2 chrome version",
+      "last 2 firefox version",
+      "last 2 safari version"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://mosimane@bitbucket.org/mosimane/docker-react.git"
+  },
+  "keywords": [
+    "React",
+    "Docker",
+    "Kubernetes"
+  ]
 }

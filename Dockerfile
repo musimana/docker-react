@@ -1,6 +1,6 @@
 FROM node:alpine as builder
 
-WORKDIR /var/www/sites/frontend
+WORKDIR /var/www/sites/docker-react
 
 COPY package.json .
 RUN npm install
@@ -10,4 +10,4 @@ RUN npm run build
 
 FROM nginx
 
-COPY --from=builder /var/www/sites/frontend/build /usr/share/nginx/html
+COPY --from=builder /var/www/sites/docker-react/build /usr/share/nginx/html
