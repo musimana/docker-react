@@ -4,7 +4,7 @@
   "private": false,
   "author": "Graham Aitken",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/mosimane/docker-react#readme",
+  "homepage": ".",
   "description": "Simple Node.js and Redis app for Section 5 of the Udemy Docker and Kubernetes course.",
   "main": "index.js",
   "dependencies": {
